@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+}
+
+body {
+  background-image: url(/pexels-pixabay-47344.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.main-container {
+  width: 90%;
+  max-width: 25em;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 4px 8px 32px 15px rgba(147, 147, 158, 0.5);
+  border: 1px solid white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.app-icon {
+  width: 10em;
+}
+.app-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color:  #ffffff;
+}
+
+label {
+  display: flex;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin: 0.5em;
+  color: white;
+}
+
+input#amount {
+  font-weight: 400;
+  font-size: 1.5em;
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 2em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+}
+
+input#amount:focus {
+  color: black;
+  border-color: red;
+}
+
+.dropdown {
+  display: flex;
+  gap: 8em;
+  width: 100%;
+}
+select {
+  width: 100%;
+  padding: 0.9em;
+  font-size: 1.15em;
+  border-radius: 0.5em;
+  background-color: rgb(58, 91, 119);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+select option {
+  background-color: transparent;
+  color: white;
+}
+button {
+  font-size: 1.2em;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.664);
+  padding: 0.8em 0;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+#result {
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: 1em;
+  color: black;
+  background-color: red;
+  color: white;
+  padding: 0.5em 0.5em;
+  border-radius: 0.5em;
+  width: 100%;
+}
